@@ -13,11 +13,12 @@ arch:
 startup: application
 boot: auto
 init: false
-host_network: true
+ports:
+  10300/tcp: 10300
 map:
   - 'config:rw'
 
 schema:
   openai_key: str
   model: str
-  model_lang: str
+  model_lang: "str?"
