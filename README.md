@@ -11,7 +11,9 @@ https://github.com/numotics/home-assistant-addons
 
 ## Add-ons in this repository
  - **[autossh](/autossh/README.md)**: Permanent port forwarding through an SSH tunnel.
+ - **[openai-whisper-cloud](/openai-whisper-cloud/README.md)**: Use whisper through openai's audio api.
 
 ## Credits
 
-- ThomDietrich for the autossh addon
+- @ThomDietrich for the autossh addon
+- @gregoriohc for the openai-audio-api addon

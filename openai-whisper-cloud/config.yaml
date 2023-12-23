@@ -1,0 +1,23 @@
+name: OpenAI Whisper Cloud
+version: 0.0.1
+slug: openai-whisper-cloud
+description: >-
+  Access whisper through OpenAI's API
+url: 'https://github.com/gregoriohc/wyoming-addons/tree/feature/docker-openai-audio-api'
+arch:
+  - armhf
+  - armv7
+  - aarch64
+  - amd64
+  - i386
+startup: application
+boot: auto
+init: false
+host_network: true
+map:
+  - 'config:rw'
+
+schema:
+  openai_key: str
+  model: str
+  model_lang: str
