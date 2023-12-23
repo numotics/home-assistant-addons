@@ -17,10 +17,10 @@ WORKDIR /usr/src
 ARG PACKAGE_VERSION='0.0.1'
 
 # Install and configure Whisper
-RUN pip3 install --no-cache-dir -U \
+RUN pip3 install --no-cache-dir --break-system-packages -U \
         setuptools \
         wheel && \
-    pip3 install --no-cache-dir \
+    pip3 install --no-cache-dir --break-system-packages \
         -i https://test.pypi.org/simple/ \
         --extra-index-url https://pypi.org/simple/ \
         "wyoming_openai_audio_api==${PACKAGE_VERSION}"
